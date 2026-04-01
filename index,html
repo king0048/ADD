@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Ad Site</title>
+    <title>My Ad Website</title>
     <!-- Start.io SDK -->
     <script async src="https://start.io"></script>
 </head>
-<body>
-    <h1>Welcome to My Website</h1>
-    <p>Please wait, ads are loading...</p>
+<body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
+
+    <h1>Welcome to My Ad-Enabled Site</h1>
+    <p>The ads should appear below this message.</p>
 
     <!-- Banner Ad Container -->
-    <div id="start-io-banner" style="display:flex; justify-content:center; margin: 20px 0;"></div>
+    <div id="startio-banner-ad" style="display:flex; justify-content:center; margin: 20px 0; min-height: 50px;"></div>
 
     <script>
       window.startio = window.startio || [];
       function startioTag() { startio.push(arguments); }
 
-      // Your App ID
-      startioTag('init', '203111880'); 
+      // আপনার নতুন App ID সেট করা হয়েছে
+      startioTag('init', '203814909'); 
 
-      // Banner Ad
+      // ব্যানার বিজ্ঞাপনের জন্য
       startioTag('ad', 'banner', {
-        container: 'start-io-banner',
+        container: 'startio-banner-ad',
         size: '320x50'
       });
 
-      // Interstitial Ad
+      // ইন্টারস্টিশিয়াল (পুরো স্ক্রিন) বিজ্ঞাপনের জন্য
       startioTag('ad', 'interstitial');
     </script>
+
 </body>
 </html>
+
 
 
