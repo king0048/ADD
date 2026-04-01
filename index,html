@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+hellow wellcome BAIBHAV HACKER
+</HEAD>
+
+<!-- Start.io (StartApp) SDK Setup -->
+<script async src="https://start.io"></script>
+
+<script>
+  window.startio = window.startio || [];
+  function startioTag() { startio.push(arguments); }
+
+  // আপনার App ID (203111880) এখানে সেট করা হয়েছে
+  startioTag('init', '203111880'); 
+
+  // ব্যানার বিজ্ঞাপন লোড করার জন্য
+  startioTag('ad', 'banner', {
+    container: 'start-io-banner', // বিজ্ঞাপনটি এই ডিভ-এ দেখাবে
+    size: '320x50'
+  });
+
+  // ইন্টারস্টিশিয়াল (পুরো স্ক্রিন) বিজ্ঞাপন লোড করার জন্য
+  startioTag('ad', 'interstitial');
+</script>
+
+<!-- আপনার ওয়েবসাইটের যেখানে বিজ্ঞাপন দেখাতে চান সেখানে নিচের ডিভ-টি বসান -->
+<div id="start-io-banner" style="display:flex; justify-content:center; margin: 20px 0;"></div>
+
